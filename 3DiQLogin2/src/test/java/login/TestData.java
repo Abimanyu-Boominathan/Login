@@ -89,7 +89,7 @@ public class TestData {
 		WebElement submit = driver.findElement(By
 				.xpath("/html/body/miq-root/app-layout/div/div/div[2]/app-sign-in/div/div/div/div/form/div[4]/button"));
 		submit.click();
-		Thread.sleep(1000);
+		Thread.sleep(5000);
 
 		String actualUrl = "http://3.129.255.177:4202/#/account/login";
 		String expectedUrl = driver.getCurrentUrl();
