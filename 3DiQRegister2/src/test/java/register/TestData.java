@@ -73,7 +73,7 @@ public class TestData {
 		PropertyConfigurator.configure("log4j.properties");
 		
 
-		driver.get("http://3.129.255.177:4202/#/account/login");
+		driver.get("http://3.129.255.177:4202/#/account/register");
 		Thread.sleep(1000);
 	
 	
@@ -107,7 +107,7 @@ public class TestData {
 	    
 		
 
-		String actualUrl = "http://3.129.255.177:4202/#/account/login";
+		String actualUrl = "http://3.129.255.177:4202/#/account/register";
 		String expectedUrl = driver.getCurrentUrl();
 		
 		
