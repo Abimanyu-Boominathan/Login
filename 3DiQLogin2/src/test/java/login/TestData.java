@@ -69,7 +69,7 @@ public class TestData {
 
 		PropertyConfigurator.configure("log4j.properties");
 
-		driver.get("http://localhost:4200/#/account/login");
+		driver.get("http://3.129.255.177:4202/#/account/login");
 		driver.manage().timeouts().implicitlyWait(16, TimeUnit.SECONDS);
 		Thread.sleep(1000);
 
@@ -91,7 +91,7 @@ public class TestData {
 		submit.click();
 		Thread.sleep(1000);
 
-		String actualUrl = "http://localhost:4200/#/account/login";
+		String actualUrl = "http://3.129.255.177:4202/#/account/login";
 		String expectedUrl = driver.getCurrentUrl();
 
 		if (actualUrl.equals(expectedUrl)) {
