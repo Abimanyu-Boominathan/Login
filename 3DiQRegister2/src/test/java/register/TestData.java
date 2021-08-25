@@ -73,7 +73,7 @@ public class TestData {
 		PropertyConfigurator.configure("log4j.properties");
 		
 
-		driver.get("http://localhost:4200/#/account/register");
+		driver.get("http://3.129.255.177:4202/#/account/login");
 		Thread.sleep(1000);
 	
 	
@@ -103,11 +103,11 @@ public class TestData {
 	    
 	    WebElement register = driver.findElement(By.xpath("/html/body/miq-root/app-layout/div/div/div[2]/app-sign-up/div/div/div/form/div[6]/div/button[1]"));
 	    register.click();		
-	    Thread.sleep(1000);
+	    Thread.sleep(3000);
 	    
 		
 
-		String actualUrl = "http://localhost:4200/#/account/register";
+		String actualUrl = "http://3.129.255.177:4202/#/account/login";
 		String expectedUrl = driver.getCurrentUrl();
 		
 		
