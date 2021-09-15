@@ -3,7 +3,9 @@ pipeline{
     stages{
         stage('Git checkout using jenkins file')
         {
-            git branch: 'main', url: 'https://github.com/Abimanyu-Boominathan/Login'
+           steps{
+           git branch: 'main', url: 'https://github.com/Abimanyu-Boominathan/Login'
+           } 
         }
     }
 }
