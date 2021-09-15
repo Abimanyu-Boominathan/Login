@@ -4,7 +4,7 @@ pipeline{
         stage('Git checkout using jenkins file')
         {
            steps{
-           git branch: 'main', url: 'https://github.com/Abimanyu-Boominathan/Login'
+          echo 'Git is already there'
            } 
         }
     }
