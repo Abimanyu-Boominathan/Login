@@ -5,6 +5,7 @@ pipeline{
         {
            steps{
           echo 'Git is already there'
+          echo 'Git is already there'
            
            } 
         }
